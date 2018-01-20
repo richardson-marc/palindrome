@@ -24,7 +24,6 @@ if ($string == reverse($string) ) {
 }
 sub add_reverse {
     my ($string, $reverse) = @_;
-#       print "reverse is $reverse\n";
     my $addition = $string + reverse($string);
     print "$addition\n";
     check_palindrome($addition);
@@ -38,10 +37,5 @@ sub_eval($addition, $reverse);
 sub sub_eval {
     my ($addition, $reverse) = @_;
 	print "compare $addition $reverse\n";
-    if ($addition != $reverse ) {
-
-	print "first time failed\n";
-	print "$addition is not a palindrome\n";
-	}
 }    
        
