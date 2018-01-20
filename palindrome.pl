@@ -27,7 +27,6 @@ sub add_reverse {
     my $addition = $string + reverse($string);
     print "$addition\n";
     check_palindrome($addition);
-    print "addition $addition reverse $reverse\n";
         return ($addition, $reverse);
 }
 
