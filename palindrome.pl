@@ -32,9 +32,4 @@ sub add_reverse {
 
 check_palindrome($string);
 
-sub_eval($addition, $reverse);
-sub sub_eval {
-    my ($addition, $reverse) = @_;
-	print "compare $addition $reverse\n";
-}    
        
