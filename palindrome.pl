@@ -5,6 +5,7 @@ use warnings;
 
 my $addition;
 my $reverse;
+# set $debug=1 if you want more verbosity...
 my $debug;
 
 print 'Enter string: ';
@@ -25,7 +26,9 @@ if ($string == reverse($string) ) {
 sub add_reverse {
     my ($string, $reverse) = @_;
     my $addition = $string + reverse($string);
+    print "adding $string to $reverse (reverse of $string)\n" if $debug;
     print "$addition\n";
+    print "$addition is the sum of $string + $reverse \n" if $debug;
     check_palindrome($addition);
         return ($addition, $reverse);
 }
